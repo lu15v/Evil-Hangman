@@ -1,0 +1,23 @@
+<h1><%=title%></h1>
+</p>
+<table style="width:23%">
+<tr>
+<th>vidas</th>
+</tr>
+<tr>
+<td id="lives"><%=session.lives%></td>
+</tr>
+</table>
+</p>
+<p>
+  <% for(var i = 0; i <session.size; i++){%>
+    <label id="<%=i%>">__</label>
+     <% }%>
+
+</p>
+
+<p>
+  <% letters.forEach(function(x){%>
+    <input  type="button" id="<%=x%>" value="<%=x%>"  onclick="save(this.value, this.id,<%=session.lives%>, '<%=choice%>','<%=choices%>')"></button>
+     <% });%>
+</p>

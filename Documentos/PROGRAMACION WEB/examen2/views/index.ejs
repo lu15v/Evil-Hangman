@@ -1,0 +1,16 @@
+
+    <h1><%= title %></h1>
+    <h2>Insert the word's length and the number of lives</h2>
+    <form action="/input" method="post" name="Form" onsubmit="return validateForm()">
+    <p>
+    <label for = "label_size">Length:</label>      <!--nombre y id tienen que ser iguales "for y id" -->
+    <input id="label_size"  type= "number"  min="2" max="22" name="size" size="28"  placeholder="Word's length"/>
+    </p>
+    <p>
+      <label for = "label_lives">Lives:</label>
+      <input id="label_lives" type= "number" min="1" max="15" name="lives" size="30" placeholder="Number of lives" />
+    </p>
+    <p>
+        <input type="submit" value="Submit"/>
+    </p>
+</form>
